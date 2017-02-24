@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test UI</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script type="text/javascript" src="scripts/jquery.alerts/jquery.alerts.js"></script>
+    <script type="text/javascript" src="scripts/jquery.uniform/jquery.uniform.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/jquery.alerts/jquery.alerts.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/jquery.uniform/jquery.uniform.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <div class="shadow-l"></div>
+        <div class="shadow-r"></div>
+        
+        <div class="header-1">
+            
+            <span class="title">Practice Exam 1</span>
+            
+            <a href="#" class="control timer" title="Click to toggle">
+                <div class="icon i-timer"></div>
+                <span>Time Remaining </span>
+                <span id="countdown">4330</span>
+            </a>
+            
+            <a href="#" class="control progress" title="Click to toggle">
+                <div class="icon i-progress"></div>
+                <span>5 of 37</span>
+            </a>
+            
+        </div>
+        <div class="header-2">
+            <a href="#" id="button_review" class="link bookmark"><div class="icon i-star-on"></div><u>F</u>lag for Review</a>
+        </div>
+        
+        <div class="content">
+            
+            
+            <div class="question">What is the value of $h$?</div>
+            
+            <div class="statement">(1) $h^2 = 36$</div>
+            <div class="statement">(2) $h^2 + 12h = -36$</div>
+            
+            <div class="option">
+                <input name="answer" type="radio" id="o1" />
+                <label for="o1">Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.</label>
+            </div>
+            
+            <div class="option">
+                <input name="answer" type="radio" id="o2" />
+                <label for="o2">Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.</label>
+            </div>
+            
+            <div class="option">
+                <input name="answer" type="radio" id="o3" />
+                <label for="o3">BOTH stamenents TOGETHER are sufficient, but NEITHER stamenent ALONE is sufficient.</label>
+            </div>
+            
+            <div class="option">
+                <input name="answer" type="radio" id="o4" />
+                <label for="o4">EACH statement ALONE is sufficient.</label>
+            </div>
+            
+            <div class="option">
+                <input name="answer" type="radio" id="o5" />
+                <label for="o5">Statements (1) and (2) TOGETHER are NOT sufficient.</label>
+            </div>
+            
+            <div class="option guessed">
+                <input name="guessed" type="checkbox" id="guessed" />
+                <label for="guessed">Mark as a guess</label>
+                <a id="clear_answer" href="#">Clear Answer</a>
+                <a id="show_answer" href="#">Show Answer</a>
+                <a id="hide_answer" href="#">Hide Answer</a>
+            </div>
+            
+            <div class="explain">
+                <div class="padding">
+                    This is an explanation!
+                </div>
+            </div>
+            
+            <br clear="all" />
+            
+        </div>
+        
+        <div class="footer">
+            
+            <div class="button">
+                <div class="icon i-exit"></div>
+                <div class="text"><u>E</u>nd Exam</div>
+                <button name="exit" id="button_exit">&nbsp;</button>
+            </div>
+            
+            <div class="button">
+                <div class="icon i-study"></div>
+                <div class="text"><u>S</u>tudy Mode</div>
+                <button name="help" id="button_study">&nbsp;</button>
+            </div>
+            
+            <div class="button right">
+                <div class="icon i-next"></div>
+                <div class="text"><u>N</u>ext</div>
+                <button name="next" id="button_next">&nbsp;</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

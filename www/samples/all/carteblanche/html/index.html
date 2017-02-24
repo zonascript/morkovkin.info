@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="scripts/uniform/jquery.uniform.css" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/uniform/jquery.uniform.min.js"></script>
+        <script type="text/javascript" src="scripts/simplemodal/jquery.simplemodal.min.js"></script>
+        <script type="text/javascript" src="scripts/defaultvalue/jquery.defaultvalue.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function() {
+                $("input[type=radio], input[type=checkbox]").uniform();
+                $("#calc").click(function() {
+                     $("#popup").modal({overlayClose: true});
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        
+        <div class="header">
+            <div class="wrap">
+                <a href="#" class="logo"><img src="images/logo-header.png" width="327" height="66" border="0" /></a>
+                <div class="tels">
+                    <span class="label">multichannel:</span>&nbsp;<span class="phone">+7 (495) 221-81-81</span><br />
+                    <span class="label">personal manager:</span>&nbsp;<span class="phone">+7 (985) 246-23-77</span><br />
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="wrap">
+                
+                <div class="banner">
+                    
+                    <h1>The "Carte-Blanche"</h1>
+                    <h2>Request a callback and receive a 50% discount</h2>
+                    <ul>
+                        <li>More than 10 years on a plastic cards market</li>
+                        <li>Owned production 7 miles from Moscow</li>
+                        <li>Stamp more than 4.5 million cards monthly</li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="callback">
+                    
+                    <div class="comment">
+                        <strong>Request a callback</strong>, and our manager will reach you in prefered time.
+                    </div>
+                    
+                    <div class="form">
+                        
+                        <div class="field">
+                            <label for="when" class="label">When to call?</label><br />
+                            <select name="when" id="when" class="input select">
+                                <option value="now">Right now</option>
+                                <option value="wait-15">After 15 minutes</option>
+                                <option value="wait-30">After 30 minutes</option>
+                                <option value="wait-45">After 45 minutes</option>
+                                <option value="wait-60">After an hour</option>
+                                <option value="tomorrow-1">Tomorrow before noon</option>
+                                <option value="tomorrow-2">Tomorrow after noon</option>
+                            </select>
+                        </div>
+                        
+                        <div class="field">
+                            <label for="phone" class="label">Your number</label><br />
+                            <input type="text" name="phone" id="phone" class="input" />
+                        </div>
+                        
+                        <div class="field">
+                            <div class="button">
+                                <label>Call me back</label>
+                                <input name="call" type="submit" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="title">
+                    <div class="dec-1"></div>
+                    <div class="text">Order calculator</div>
+                    <div class="dec-2"></div>
+                </div>
+                <div class="panel">
+                    <div class="col-1">
+                        
+                        <div class="field">
+                            <label for="volume" class="label">Quantity:</label>
+                            <div class="border">
+                                <input type="text" class="input" value="" />
+                            </div>
+                        </div>
+                        
+                        <div class="field">
+                            <div class="button">
+                                <div class="icon"></div>
+                                <label>Calculate price</label>
+                                <input name="calc" id="calc" type="submit" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-2">
+
+                        <div class="field">
+                            <label class="label">Coloring:</label>
+                            <ul class="list">
+                                <li>
+                                    <input type="radio" name="colors" id="c44" value="c44" checked="checked" />
+                                    <label for="c44">Both sides full color (4 + 4)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="colors" id="c41" value="c41" />
+                                    <label for="c41">One side black/white (4 + 1)</label></li>
+                                <li>
+                                    <input type="radio" name="colors" id="c40" value="c40" />
+                                    <label for="c40">One side with no print (4 + 0)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-2-1">
+                            
+                            <div class="field">
+                                <label class="label">Printing type:</label>
+                                <ul class="list">
+                                    <li>
+                                        <input type="radio" name="printer" id="digital" value="digital" checked="checked" />
+                                        <label for="digital">Digital printing</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="printer" id="offset" value="offset" />
+                                        <label for="offset">Offset printing</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="label">Plastic type:</label>
+                                <ul class="list">
+                                    <li>
+                                        <input type="radio" name="plastic" id="white" value="white" checked="checked" />
+                                        <label for="white">White plastic</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="plastic" id="golden" value="golden" />
+                                        <label for="golden">Golden plastic</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="plastic" id="silver" value="silver" />
+                                        <label for="silver">Silver plastic</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="plastic" id="sparking" value="sparking" />
+                                        <label for="sparking">Sparkling plastic</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="plastic" id="colored" value="colored" />
+                                        <label for="colored">Color plastic</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="plastic" id="transparent" value="transparent" />
+                                        <label for="transparent">Transparent plastic</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-2-2">
+                            
+                            <div class="field">
+                                <label class="label">Additional options:</label>
+                                <ul class="list">
+                                    <li>
+                                        <input type="checkbox" name="magnetic-line" id="magnetic-line" />
+                                        <label for="magnetic-line">Magnet stripe</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="barcode" id="barcode" />
+                                        <label for="barcode">Barcode</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="embossed" id="embossed" />
+                                        <label for="embossed">Embossing</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="id-number" id="id-number" />
+                                        <label for="id-number">Printed number</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="signature-line" id="signature-line" />
+                                        <label for="signature-line">Signature line</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="scratch-line" id="scratch-line" />
+                                        <label for="scratch-line">Scratch-line</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="foil-stamp" id="foil-stamp" />
+                                        <label for="foil-stamp">Foil-stamping</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="trinket-card" id="trinket-card" />
+                                        <label for="trinket-card">Trinket-card</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="passage-hole" id="passage-hole" />
+                                        <label for="passage-hole">Passage-hole</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="mi-fare-chip" id="mi-fare-chip" />
+                                        <label for="mi-fare-chip">Mi-fare chip</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="em-marine-chip" id="em-marine-chip" />
+                                        <label for="em-marine-chip">Em-marine chip</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <br clear="all" />
+                </div>
+                
+                <br clear="all" />
+                
+
+                
+                <div class="template">
+                    
+                    <div class="comment">
+                        For your convenience we've prepared card templates in the most popular formats.
+                        With help of these templates designer can prepare printing task with ease.
+                    </div>
+                    
+                    <a href="#" class="icon file-ai"></a>
+                    <a href="#" class="icon file-cdr"></a>
+                    <a href="#" class="icon file-pdf"></a>
+                    <a href="#" class="icon file-psd"></a>
+                    
+                </div>
+                <br clear="all" />
+                
+            </div>
+            
+        </div>
+        
+        <div id="popup" class="popup" style="display: none;">
+            
+            <div class="border">
+                
+                <div class="panel">
+                    
+                    <div class="heading">
+                        
+                        <div class="section">
+                            <div class="value">3.4 kg.</div>
+                            <div class="label">WEIGHT</div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="value">12.50</div>
+                            <div class="label">CARD COST</div>
+                        </div>
+                        
+                        <div class="section last">
+                            <div class="value">1250</div>
+                            <div class="label">ORDER PRICE</div>
+                        </div>
+                        
+                        <br clear="all" />
+                        
+                    </div>
+                    
+                    <div class="content">
+                        
+                        <div class="title">Order online and get 50% discount</div>
+                        
+                        <div class="field">
+                            <label for="name" class="label">Your name <span>*</span></label>
+                            <input type="text" name="name" id="name" class="input" />
+                        </div>
+
+                        <div class="field">
+                            <label for="company" class="label">Company <span>*</span></label>
+                            <input type="text" name="company" id="company" class="input" />
+                        </div>
+
+                        <div class="field">
+                            <label for="company" class="label">Mobile number <span>*</span></label>
+                            <input type="text" name="company" id="company" class="input" />
+                        </div>
+
+                        <div class="field">
+                            <label for="company" class="label">E-mail <span>*</span></label>
+                            <input type="text" name="company" id="company" class="input" />
+                        </div>
+                        
+                        <div class="field controls">
+                            
+                            <div class="comment">
+                                Discount is only applied for delivery cost.
+                            </div>
+                            
+                            <div class="button">
+                                <label>Place order</label>
+                                <input name="calc" type="submit" />
+                            </div>
+                            
+                        </div>
+                        
+                        <br clear="all" />
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <div class="wrap">
+                <a href="#" class="logo"><img src="images/logo-footer.png" width="204" height="45" border="0" /></a>
+                <div class="copy">
+                    &copy; 2012 The "Carte-Blanche"<br />
+                    All rights reserved
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,98 @@
+html, * html body {height: 100%;}
+
+a {text-decoration: none;}
+
+body
+{
+    color: #000000;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    min-height: 100%;
+    min-width: 1024px;
+    padding: 0;
+    position: relative;
+    background: url(images/back.png);
+}
+
+.wrapper
+{
+    position: absolute;
+    left: 50%;
+    margin-left: -512px;
+    width: 1024px;
+    height: 100%;
+    background: url(images/back-2.png) repeat-y #FFFFFF;
+}
+
+.link u, .button u {text-decoration: none;}
+.alt u {text-decoration: underline;}
+
+.shadow-l {position: absolute; left: -14px; width: 14px; height: 100%; background: url(images/shadows.png) repeat-y;}
+.shadow-r {position: absolute; right: -14px; width: 14px; height: 100%; background: url(images/shadows.png) -14px 0 repeat-y;}
+
+.header-1 {height: 45px; padding: 0 20px 0 9px; background: #006EAE; color: #FFFFFF; font-size: 20px; line-height: 20px;}
+.header-2 {height: 35px; padding: 0 35px 0 0; background: url(images/back-1.png) no-repeat; color: #FFFFFF; font-size: 18px; line-height: 33px;}
+
+.header-1 .title {float: left; line-height: 45px;}
+
+.content {position: relative; padding: 16px 45px 0 45px;}
+.content .question {float: left; clear: left; margin: 0 0 10px 0;}
+.content .statement {float: left; clear: left; margin: 10px 0 20px 20px;}
+.content .option {float: left; clear: left; height: 15px; margin: 10px 0 10px 16px;}
+.content .option input {float: left; margin: 4px 16px 0 0;}
+.content .option label {float: left;}
+.content .option .radio {float: left; margin: 2px 8px 0 0;}
+.content .option .checker {float: left; margin: 2px 8px 0 0;}
+
+.explain {display: none; position: absolute; right: 22px; top: 0; width: 270px; height: 100%; background: #7EAFE1; color: #FFFFFF;}
+.explain .padding {padding: 14px 25px 14px 25px;}
+
+.option .radio.valid span{background: url(images/icons-explain.png) 1px 2px no-repeat !important;}
+.option .radio.invalid span{background: url(images/icons-explain.png) -16px 2px no-repeat !important;}
+
+.footer {position: absolute; bottom: 0; width: 1004px; height: 38px; padding: 0 0 0 20px; background: url(images/back-3.png) no-repeat;}
+
+.icon {float: left; width: 16px; height: 16px; background: url(images/icons-white.png) no-repeat;}
+.icon.i-help {background-position: 0px 0px;}
+.icon.i-exit {background-position: -16px 0px;}
+.icon.i-next {background-position: -48px 0px;}
+.icon.i-star-off {background-position: -96px 0px;}
+.icon.i-star-on {background-position: -112px 0px;}
+.icon.i-timer {background-position: -64px 0px;}
+.icon.i-progress {background-position: -80px 0px;}
+.icon.i-close {background-position: -128px 0px;}
+.icon.i-study {background-position: -144px 0px;}
+
+.link {cursor: pointer;}
+.link:hover {color: #FFFF00;}
+.link:hover .icon {background-image: url(images/icons-yellow.png) !important;}
+
+.button {float: left; cursor: pointer; position: relative; display: inline-block; border-right: 2px solid #FFFFFF;}
+.button .icon {float: left; margin: 13px 6px 0 9px;}
+.button .text {float: left; margin: 0 9px 0 0; line-height: 38px; color: #FFFFFF;}
+.button button {cursor: pointer; position: absolute; left: 0px; top: 2px; width: 100%; height: 36px; border: none; background: transparent;}
+.button:hover .icon {background-image: url(images/icons-yellow.png) !important;}
+.button:hover .text {color: #FFFF00;}
+
+.button.right {float: right; border-right: none; border-left: 2px solid #FFFFFF;}
+
+.bookmark {float: right; clear: right; display: block; width: aito; height: 100%; font-size: 16px; color: #FFFFFF;}
+.bookmark .icon {margin: 9px 6px 0 0;}
+
+.control {float: right; clear: right; display: inline-block; height: 20px; font-size: 16px; color: #FFFFFF; cursor: pointer;}
+.control .icon {float: left; margin: 4px 0 0 0;}
+.control span {float: left; margin: 0 0 0 6px; line-height: 22px; }
+
+.guessed {margin-top: 24px !important; }
+.guessed label {float: left; color: #62A21D;}
+.guessed a {float: left; color: #1F78B0; border-left: 1px solid #BABABA; padding: 0 0 0 8px; margin: 0 0 0 8px;}
+
+
+.popup {}
+.popup .icon {float: right; margin: 12px 0 0 0; cursor: pointer;}
+.popup button {border: 1px solid #FFFFFF; background: transparent; font-size: 16px; color: #FFFFFF; margin: 0 6px 0 0; padding: 5px 15px 5px 15px; cursor: pointer;}
+.popup button:hover, .popup button:active {color: #FFFF00;}
+
+.math {font-size: 14px !important;}

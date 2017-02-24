@@ -1,0 +1,127 @@
+body {background: url(images/bg.png) #DCE1E4; font-family: Arial; font-size: 14px; line-height: 17px;}
+
+.wrap {width: 720px; margin: 0 auto;}
+
+.header {width: 100%; height: 131px; background: url(images/header-bg.png) repeat-x;}
+.header .logo {float: left; margin-top: 34px;}
+.header .tels {float: right; margin: 42px 0 0 0; line-height: 26px; text-align: right;}
+.header .tels .label {position: relative; top: -2px; left: -8px; font-size: 16px; font-style: italic; color: #a8a8a8;}
+.header .tels .phone {position: relative; font-size: 21px; font-style: normal; color: #454545;}
+
+.footer {height: 82px; margin: 24px 0 0 0; background: url(images/footer-bg.png) repeat-x;}
+.footer .logo {float: left; margin-top: 22px;}
+.footer .copy {float: right; margin-top: 28px; text-align: right; color: #FFFFFF; }
+
+.content .banner {position: relative; width: 720px; height: 223px; margin: 35px 0 0 0; background: url(images/banner.jpg) no-repeat;}
+.content .banner h1 {position: absolute; left: 27px; top: 22px; color: #FFFFFF; font-size: 29px; text-shadow: 0 1px 0 #000000;}
+.content .banner h2 {position: absolute; left: 20px; bottom: 10px; color: #dce1e5; font-size: 16px;}
+.content .banner ul {position: absolute; left: 45px; top: 75px; color: #FFFFFF; font-size: 14px; text-shadow: 0 1px 0 #000000;}
+.content .banner ul li {padding: 0 0 0 20px; line-height: 22px; background: url(images/banner-bullet.png) 0 8px no-repeat;}
+
+.content .callback {position: relative; width: 720px; height: 82px; background: url(images/callback-bg.png) no-repeat;}
+.content .callback .comment {position: absolute; left: 20px; top: 10px; width: 220px; height: 50px; line-height: 20px; color: #454545;}
+.content .callback .comment strong {color: #cc4800; font-weight: bold;}
+.content .callback .form {position: absolute; left: 280px; top: 16px;}
+
+.content .template {margin: 0 0 0 0;}
+.content .template .comment {float: left; width: 540px; margin: 0 14px 0 0; color: #37383d;}
+.content .template .icon {float: left; width: 32px; height: 32px; margin: 2px 8px 0 0;}
+.content .template .file-ai {background: url(images/file-ai.png) no-repeat;}
+.content .template .file-cdr {background: url(images/file-cdr.png) no-repeat;}
+.content .template .file-pdf {background: url(images/file-pdf.png) no-repeat;}
+.content .template .file-psd {background: url(images/file-psd.png) no-repeat;}
+
+.content .title {clear: both; margin: 24px 0 0 6px;}
+.content .title .text {float: left; height: 34px; line-height: 34px; font-size: 20px; background: #417480; color: #FFFFFF;}
+.content .title .dec-1 {float: left; width: 40px; height: 34px; background: url(images/title-bg.png) left top no-repeat;}
+.content .title .dec-2 {float: left; width: 40px; height: 34px; background: url(images/title-bg.png) right top no-repeat;}
+
+.content .panel {clear: both; padding: 24px; border: 1px solid #B7BBBD; background: #EBF0F2;}
+.content .panel .col-1 {float: left; width: 220px; margin-right: 32px; }
+.content .panel .col-1 .label {width: 76px; line-height: 38px; font-weight: bold; color: #444444;}
+.content .panel .col-1 .input {width: 112px; text-align: center; font-size: 22px;}
+.content .panel .col-1 .button {width: 194px; height: 28px; margin-top: 14px; line-height: 27px; font-size: 17px; text-align: center;}
+.content .panel .col-1 .button .icon {margin: 6px 0 0 0; background: url(images/icon-calc.png) no-repeat;}
+.content .panel .col-2 {float: left; width: 390px;}
+.content .panel .col-2 .label {display: block; width: 100%; margin: 0 0 8px 0; font-weight: bold; color: #444444;}
+.content .panel .col-2 .field {margin: 0 0 24px 0;}
+.content .panel .col-2 .col-2-1 {display: block; float: left; width: 180px; margin: 0 16px 0 0;}
+.content .panel .col-2 .col-2-2 {display: block; float: left; width: 194px; margin: 0 0 0 0;}
+
+.popup {width: 420px; margin: 24px auto;}
+.popup .border {width: 100%; height: 100%; padding: 7px; background: #DADADA;}
+.popup .panel {width: 100%; height: 100%; border: 1px solid #B7BBBD; background: #EBF0F2; overflow: hidden;}
+.popup .panel .heading {padding: 14px 22px 8px 22px; border-bottom: 1px solid #B7BBBD; background: url(images/heading-bg.png) repeat-x #DADADA;}
+.popup .panel .heading .section {float: left; width: 105px; margin-right: 24px;}
+.popup .panel .heading .section .value {height: 33px; line-height: 32px; font-size: 24px; text-align: center; color: #FFFFFF; text-shadow: 0 1px 0 #676767; background: url(images/value-bg-1.png) repeat-x;}
+.popup .panel .heading .section .label {width: 100%; color: #5e5d5e; text-align: center; font-size: 14px;}
+.popup .panel .heading .last {margin-right: 0;}
+.popup .panel .heading .last .value {background: url(images/value-bg-2.png) repeat-x;}
+.popup .panel .heading .last .label {color: #114885;}
+.popup .panel .content {padding: 14px 22px 8px 22px;}
+.popup .panel .content .title {margin: 6px 0 22px 0; padding-bottom: 6px; font-size: 22px; color: #da7c0c; border-bottom: 1px solid #B7BBBD;}
+.popup .panel .content .field {width: 100%; margin-bottom: 12px;}
+.popup .panel .content .field .label {width: 135px;}
+.popup .panel .content .field .input {width: 230px;}
+.popup .panel .content .controls {margin-top: 10px; border-top: 1px solid #B7BBBD;}
+.popup .panel .content .controls .button {float: right; margin: 12px 0 0 0;}
+.popup .panel .content .controls .comment {float: left; width: 190px; margin: 12px 0 0 0; line-height: 14px; font-size: 12px; color: #b7bbbd;}
+
+
+.field {float: left; margin-right: 12px;}
+.field .label {float: left; display: block; line-height: 24px; color: #457682;}
+.field .label span {color: #FF0000;}
+.field .input {float: left; display: block; width: 140px; height: 20px; padding: 2px; border: 1px solid #B7BBBD;}
+.field .select {width: 140px; height: 26px;}
+.field .border {float: left; padding: 7px; background: #DADADA;}
+.field .button {float: left; position: relative; height: 24px; margin: 24px 0 0 0; padding: 0 6px; line-height: 24px; color: #FFFFFF; cursor: pointer; border: 1px solid #DA7C0C; background: url(images/button-bg.png) repeat-x #F47B20;}
+.field .button .icon {float: left; width: 16px; height: 16px;}
+.field .list {float: left;}
+.field .list li {float: left;}
+.field .list li label {float: left; line-height: 24px; color: #666666;}
+
+.simplemodal-overlay
+{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+    zoom: 1;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    background: #000000;
+}
+
+.button input
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    zoom: 1;
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    cursor: pointer;
+}
+
+
+.input, .button, .value
+{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;    
+}
+
+.panel, .border
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;    
+}
+
+.radio, .checker
+{
+    margin-left: -3px !important;
+    margin-right: 6px !important;
+}

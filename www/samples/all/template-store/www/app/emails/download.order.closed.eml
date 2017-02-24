@@ -1,0 +1,18 @@
+Subject: Your order download link
+
+Dear {name},
+
+Your payment of {amount} {currency} has been received. Batch number is: 
+
+    {batch}
+
+Your template download link follows:
+
+    {link}
+
+Please contact us if you have any further questions.
+
+--
+James Upton
+help@skinstore.net
+www.skinstore.net

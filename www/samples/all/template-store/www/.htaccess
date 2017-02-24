@@ -1,0 +1,10 @@
+# Options -FollowSymlinks -Indexes -MultiViews
+DirectoryIndex index.php index.html
+
+RewriteEngine on
+RewriteBase /samples/all/template-store/www
+RewriteCond %{THE_REQUEST} \.zip [NC]
+RewriteRule . - [R=404,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

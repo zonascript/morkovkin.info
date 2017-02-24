@@ -1,0 +1,14 @@
+2014/03/16 18:56:08 [404] Could not find controller for path "samples/skinshop/www". at D:\Projects\examples\www\samples\skinshop\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 18:56:19 [404] Could not find controller for path "samples/skinshop/www". at D:\Projects\examples\www\samples\skinshop\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 18:56:20 [404] Could not find controller for path "samples/skinshop/www". at D:\Projects\examples\www\samples\skinshop\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 18:57:43 [404] Could not find controller for path "samples/skinshop/www". at D:\Projects\examples\www\samples\skinshop\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:46:42 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:47:19 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:47:20 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:47:30 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:47:35 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:47:36 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:47:36 [404] Could not find controller for path "samples/template-store/www". at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:463 from 127.0.0.1
+2014/03/16 21:51:37 [404] Specified path is not valid. at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:205 from 127.0.0.1
+2014/03/16 21:51:38 [404] Specified path is not valid. at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:205 from 127.0.0.1
+2014/03/16 21:52:42 [404] Specified path is not valid. at D:\Projects\examples\www\samples\template-store\www\app\classes\core\CApplication.php:213 from 127.0.0.1

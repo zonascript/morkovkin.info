@@ -1,0 +1,20 @@
+Subject: We start working on your order
+
+Dear {name},
+
+Your payment of {amount} {currency} has been received.
+Batch number is: 
+
+    {batch}
+
+We start working on your order customization, but you
+may also want to download original template:
+
+    {link}
+
+Please contact us if you have any further questions.
+
+--
+James Upton
+help@skinstore.net
+www.skinstore.net

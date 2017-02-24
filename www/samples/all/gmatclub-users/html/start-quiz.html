@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>  
+    
+    <title>GMAT Club | Test Page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.uniform/jquery.uniform.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/jquery.uniform/jquery.uniform.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+</head>
+
+<body>
+    
+    <div id="content" class="tests">
+        <h1>Take a Quiz</h1>
+        
+        <div class="widget corners-10">
+            
+            <div class="header">
+                <span class="title">Exercise options</span>
+            </div>
+            <div class="content">
+                
+                <div class="form">
+                    <div class="field">
+                        <label class="label" for="question_type">Question types</label>
+                        
+                        <ul class="v-list" style="float: left; margin-right: 16px;">
+                            <li>
+                                <input class="check" type="checkbox" id="question_types_ds" name="question_type" />
+                                <label style="margin-right: 22px;" for="question_types_ds">Data sufficiency</label>
+                            </li>
+                            <li>
+                                <input class="check" type="checkbox" id="question_types_ps" name="question_type" />
+                                <label style="margin-right: 22px;" for="question_types_ps">Problem solving</label>
+                            </li>
+                        </ul>
+                        
+                        <ul class="v-list" style="float: left; margin-right: 16px;">
+                            <li>
+                                <input class="check" type="checkbox" id="question_types_cr" name="question_type" />
+                                <label style="margin-right: 22px;" for="question_types_cr">Critical reasoning</label>
+                            </li>
+                            <li>
+                                <input class="check" type="checkbox" id="question_types_rc" name="question_type" />
+                                <label style="margin-right: 22px;" for="question_types_rc">Reading comperhension</label>
+                            </li>
+                            <li>
+                                <input class="check" type="checkbox" id="question_types_sc" name="question_type" />
+                                <label style="margin-right: 22px;" for="question_types_sc">Sentence correction</label>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="field">
+                        <label class="label" for="">Number of questions</label>
+                        
+                        <input type="test" id="question_count" name="question_count" value="5" />
+                        
+                    </div>
+                    
+                    <div class="field">
+                        <label class="label" for="">Difficulty</label>
+                        
+                        <input class="radio" type="radio" id="difficulty_easy" name="test_topic" value="easy" />
+                        <label style="margin-right: 22px;" for="difficulty_easy">Easy</label>
+                        
+                        <input class="radio" type="radio" id="difficulty_medium" name="test_topic" value="medium" />
+                        <label style="margin-right: 22px;" for="difficulty_medium">Medium</label>
+                        
+                        <input class="radio" type="radio" id="difficulty_hard" name="test_topic" value="hard" />
+                        <label style="margin-right: 22px;" for="difficulty_hard">Hard</label>
+                    </div>
+                    
+                    <div class="field">
+                        
+                        <label class="label" for="">Question pool</label>
+                        
+                        <div class="input corners-3">
+                            <select name="question_pool" style="width: 140px;">
+                                <option value="all">All questions</option>
+                                <option value="new">New questions</option>
+                                <option value="answered">Answered only</option>
+                                <option value="answered-150">Answered 2+ minutes</option>
+                                <option value="answered-180">Answered 3+ minutes</option>
+                                <option value="failed">Answered incorrectly</option>
+                                <option value="starred">Marked for review</option>
+                                <option value="guessed">Marked as a guess</option>
+                            </select>
+                        </div>
+                        
+                        <a class="literal" href="#">Reset pool</a>
+                        
+                    </div>
+                    
+                    <div class="field end">
+                        <a href="#" class="popup button blue corners-3 float-left">Start</a>
+                        <div class="float-left comment">(opens in a new window)</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

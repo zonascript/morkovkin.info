@@ -1,0 +1,77 @@
+body, table, tr, td, th {font-family: Arial; font-size: 13px; line-height: 18px; text-align: left; color: #666666; background: #FFFFFF;}
+ul, li {list-style: none; margin: 0; padding: 0;}
+select {border: 0;}
+a {outline: none;}
+
+#content {position: relative; left: 50%; margin-top: 40px; margin-left: -490px; width: 940px;}
+
+.tests h1 {font-size: 22px; margin-bottom: 18px; color: #222222;}
+.tests a:hover {text-decoration: underline;}
+
+.tests .description {margin: 0 0 32px 0;}
+.tests .subscription {float: right; padding: 8px; border: 1px solid #D4D4D4; background: #FFFFE1;}
+
+.tests .box {background-color: #E7EDF2 !important; border: 1px solid #BFD6F2; padding: 12px;}
+.tests .box-subscribe {margin: 0 0 16px 0; }
+.tests .box-customer {padding: 12px 0 12px 12px; margin: 0;}
+.tests .box-customer span {display: inline-block; padding: 0 0 0 24px; line-height: 28px; background: url(images/splitter.png) 8px 0 no-repeat;}
+
+.tests .button {display: inline-block; text-decoration: none !important; cursor: pointer; margin: 0 12px 0 0; padding: 0 10px 0 10px; font-size: 14px; font-weight: bold; background: url(images/button-bg.png);}
+.tests .button:hover {background-image: none;}
+.tests .button.orange {height: 32px; line-height: 32px; border: 1px solid #C05D16; background-color: #e3781b; color: #FFFFFF; text-shadow: 0 1px #9F5819; }
+.tests .button.blue {height: 26px; line-height: 26px !important; border: 1px solid #3681C0; background-color: #4d94d1; color: #FFFFFF; text-shadow: 0 1px #3D6B94; }
+.tests .button.green {height: 26px; line-height: 26px !important; border: 1px solid #1BA926; background-color: #46C14C; color: #FFFFFF; text-shadow: 0 1px #3D6B94; }
+
+.tests .widget {border: 1px solid #D4D4D4; overflow: hidden;}
+.tests .widget .header {height: 42px; line-height: 42px; font-size: 14px; font-weight: bold; color: #00376e; border-bottom: 1px solid #D4D4D4; background: url(images/widget-header-bg.png) repeat-x;}
+.tests .widget .content {background: #FAFAFA !important;}
+.tests .widget .footer {}
+
+.tests .widget .header .title {padding: 0 0 0 12px;}
+
+.tests .widget .header .tab {display: inline-block; float: left; height: 100%; border-right: 1px solid #D4D4D4; padding: 0 12px 0 12px; text-decoration: none;}
+.tests .widget .header .tab {color: #551A8B; cursor: pointer;}
+.tests .widget .header .tab:hover {background: #FFFFFF;}
+.tests .widget .header .tab.sel {color: #000000; cursor: default;background: #FFFFFF;}
+
+.tests .widget .content .table {border-collapse: collapse; width: 100.3%;}
+.tests .widget .content .table tr.even {background: #FAFAFA;}
+.tests .widget .content .table th {padding: 0 12px 0 12px; line-height: 24px; border-right: 1px solid #D4D4D4;font-weight: bold; background: url(images/table-header-bg.png);}
+.tests .widget .content .table td {padding: 0 12px 0 12px; line-height: 30px; border-top: 1px solid #D4D4D4; border-right: 1px solid #D4D4D4;}
+
+.tests .widget .content .form {}
+.tests .widget .content .form .field {float: left; clear: left; width: 100%; margin: -1px 0 0 0; padding: 12px 22px 12px 12px; border-top: 1px solid #D4D4D4; background: #FAFAFA;}
+.tests .widget .content .form .field * {float: left;}
+.tests .widget .content .form .field .button {margin: 0 8px 0 0;}
+.tests .widget .content .form .field .label {float: left; width: 150px;}
+.tests .widget .content .form .field .radio {float: left; margin: -1px 6px 0 -2px;}
+.tests .widget .content .form .field .checker {float: left; margin: -2px 6px 0 -2px;}
+.tests .widget .content .form .field .input {float: left; border: 1px solid #D4D4D4; padding: 2px; background: #FFFFFF;}
+.tests .widget .content .form .field .literal {float: left; margin: 4px 0 0 8px;}
+.tests .widget .content .form .field ul {margin: 0;}
+.tests .widget .content .form .field ul li {padding: 2px 0;}
+.tests .widget .content .form .field .v-list li {float: left; clear: left;}
+.tests .widget .content .form .field .h-list li {float: left; margin: 0;}
+
+.tests .question-count {float: left; width: 100px; color: #00477C; font-weight: bold; margin: 0 12px 0 0;}
+.tests .ui-slider {float: left; width: 180px; height: 4px; margin: 7px 0 0 0; background: #D4D4D4; border: none;}
+.tests .ui-slider-handle {width: 6px; height: 10px; margin-left: -4px; border: 1px solid #585858; background: url(images/button-bg.png) #888888;}
+
+.tests .icon {display: inline-block; width: 16px; height: 14px; background: url(images/icons-answers.png) no-repeat;}
+.tests .icon.valid {background-position: 0 0;}
+.tests .icon.invalid {background-position: -16px 0;}
+
+.tests .discount-link {text-decoration: none; color: #3681C0;}
+.tests .discount-load {width: 16px; height: 11px; background: url(images/loader.gif) no-repeat;}
+.tests .discount-text {color: #FF0000; text-decoration: line-through;}
+.tests .discount {display: inline-block;}
+
+.tests .comment {padding-top: 6px; font-style: italic; color: #808080;}
+
+.tests .corners-10 {border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.tests .corners-3 {border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.tests .float-left {display: block; float: left;}
+.tests .float-right {display: block; float: right; margin: 0 0 0 12px;}
+.tests .text-center {text-align: center;}
+.tests .text-left {text-align: left;}
+.tests .text-right {text-align: right;}

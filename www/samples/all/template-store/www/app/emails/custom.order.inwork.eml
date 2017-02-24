@@ -1,0 +1,17 @@
+Subject: We start working on your order
+
+Dear {name},
+
+Your payment of {amount} {currency} has been received.
+This was the first 50% of the value. Batch number is: 
+
+    {batch}
+
+We start working on your order.
+
+Please contact us if you have any further questions.
+
+--
+James Upton
+help@skinstore.net
+www.skinstore.net

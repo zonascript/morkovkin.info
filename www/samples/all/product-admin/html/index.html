@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RadioVnimanie - Production Catalog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="page">
+        
+        <div class="page-header"></div>
+        
+        <div class="page-content">
+            
+            <!-- CMS TREE -->
+            <div class="page-tree">
+                <ul class="tree">
+                    <li><a href="#"><span class="icon i-category-lock-open"></span><b>Main category</b></a></li>
+                    <li><a href="#"><span class="icon i-category-lock"></span>Product templates</a></li>
+                    <li>
+                        <a href="#"><span class="icon i-category"></span>DVRs (10)</a>
+                        <ul>
+                            <li><a href="#"><span class="icon i-category"></span>Automotive (4)</a></li>
+                            <li><a href="#"><span class="icon i-category"></span>Stationary (48)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="icon i-category"></span>GPS-navigators (empty)</a></li>
+                    <li><a href="#"><span class="icon i-category"></span>GSM-repeaters (23)</a></li>
+                    <li>
+                        <a href="#"><span class="icon i-category"></span>Radio stations (12)</a>
+                        <ul>
+                            <li><a href="#"><span class="icon i-category"></span>Automotive (4)</a></li>
+                            <li><a href="#"><span class="icon i-category"></span>Portable (10)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- PAGE CONTENT -->
+            <div class="page-body">
+                
+                <div class="alert success">Neutral notification</div>
+                <div class="alert warning">Warning about something</div>
+                <div class="alert error">Error notification</div>
+                <div class="alert info">Information message</div>
+                
+                <div class="import-export-block rounded-4">
+                    <div class="column import">
+                        <h1 class="title">Import products</h1>
+                        <label class="label" for="file">Upload CSV-file:</label><br />
+                        <input class="file" type="file" name="file" />
+                        <small>All imported products will be placed under main category</small>
+                        <div class="button blue"><span class="icon i-import"></span>Import products<input type="submit" name="import" value="" /></div>
+                    </div>
+                    <div class="column export">
+                        <h1 class="title">Export products</h1>
+                        <input class="checkbox" type="checkbox" id="shop" name="shop" /><label for="shop">Export to website</label>
+                        <small>Exporting to a website will copy products to website DB, while product images will be copied to matching directories.</small>
+                        <div class="button green"><span class="icon i-export"></span>Export catalog<input type="submit" name="export" value="" /></div>
+                    </div>
+                    <br clear="all" />
+                </div>
+                
+                <div class="create-category-block">
+                    <h1 class="title">Create category</h1>
+                    <label class="label" for="name">Category name:</label>
+                    <input class="input" type="text" id="name" name="name" /><br /><br />
+                    <div class="button brown"><span class="icon i-folder"></span>Create child category<input type="submit" name="create_category" value="" /></div>
+                </div>
+                
+                <div class="delete-category-block rounded-4">
+                    <div class="button red"><span class="icon i-delete"></span>Удалить текущую категорию<input type="submit" name="remove_category" value="" /></div>
+                    <small><b>Important!</b> Removing category will move all contained products to main category.</small>
+                    <br />
+                </div>
+                
+                <br clear="all" /><br />
+                
+                <div class="category-products-block">
+                    
+                    <select class="float-right select category" name="category" id="category">
+                        <option value="0">Main category</option>
+                        <option value="1">Product templates</option>
+                        <option value="2">DVRs (10)</option>
+                        <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;Automotive (4)</option>
+                        <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;Stationary (48)</option>
+                        <option value="5">GPS-navigators (empty)</option>
+                        <option value="6">GSM-repeaters (23)</option>
+                        <option value="7">Radio stations (12)</option>
+                        <option value="8">&nbsp;&nbsp;&nbsp;&nbsp;Automotive (24)</option>
+                        <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;Portablt (10)</option>
+                    </select>
+                    <h1 class="title">Category products</h1>
+                    
+                    <div class="table">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <th><input class="checkbox" type="checkbox" id="check_all" /></th>
+                                <th>Name</th>
+                                <th>Price, RUR</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><input class="checkbox" type="checkbox" name="select" value="0" /></td>
+                                <td>Radio station VECTOR VT-47 SPORT</td>
+                                <td>1400 + 30%</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td><input class="checkbox" type="checkbox" name="select" value="0" /></td>
+                                <td>Radio station VECTOR VT-47 M2</td>
+                                <td>1400 + 30%</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr>
+                                <td><input class="checkbox" type="checkbox" name="select" value="0" /></td>
+                                <td>Radio station VECTOR VT-47 PILOT</td>
+                                <td>1400 + 30%</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td><input class="checkbox" type="checkbox" name="select" value="0" /></td>
+                                <td>Radio station VECTOR VT-48 GT</td>
+                                <td>1400 + 30%</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr>
+                                <td><input class="checkbox" type="checkbox" name="select" value="0" /></td>
+                                <td>Radio station VECTOR VT-48 R2</td>
+                                <td>1400 + 30%</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <br />
+                    
+                    <div class="button brown">
+                        <input type="submit" name="move_product" value="" />
+                        <span class="icon i-folder"></span>Move
+                        <span class="icon i-down-brown float-right"></span>
+                    </div>
+                    <div class="button red">
+                        <input type="submit" name="delete_product" value="" />
+                        <span class="icon i-delete"></span>Remove
+                    </div>
+                    <div class="button brown float-right">
+                        <input type="submit" name="create_product" value="" />
+                        <span class="icon i-product"></span>Create products
+                        <span class="icon i-down-brown float-right"></span>
+                    </div>
+                    
+                </div>
+                
+                <br clear="all" /><br />
+                
+                <div class="product-card-block">
+                    
+                    <div class="float-right navigator">
+                        <div class="button"><input type="submit" name="prev" value="" /><span class="icon i-prev float-none"></span></div>
+                        <div class="button"><input type="submit" name="next" value="" /><span class="icon i-next float-none"></span></div>
+                    </div>
+                    <h1 class="title">Product card</h1>
+                    
+                    <div class="float-right image rounded-4">
+                        <a href="#">SELECT PHOTO</a>
+                    </div>
+                    
+                    <div class="float-left main">
+                        <input class="input name" type="text" name="name" id="name" value="" />
+                        
+                        <br clear="all" />
+                        
+                        <div class="float-left">
+                            <label class="label" for="id">Product ID:</label><br clear="all" />
+                            <input class="input id" type="text" name="id" id="id" value="" />
+                        </div>
+                        
+                        <div class="float-left">
+                            <label class="label" for="category">Category:</label><br clear="all" />
+                            <select class="input select category" name="category" id="category">
+                                <option value="0">Main category</option>
+                                <option value="1">Product templates</option>
+                                <option value="2">DVRs (10)</option>
+                                <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;Automotive (4)</option>
+                                <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;Stationary (48)</option>
+                                <option value="5">GPS-navigators (empty)</option>
+                                <option value="6">GSM-repeaters (23)</option>
+                                <option value="7">Radio stations (12)</option>
+                                <option value="8">&nbsp;&nbsp;&nbsp;&nbsp;Automotive (24)</option>
+                                <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;Portable (10)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <br clear="all" /><br />
+                    
+                    <div class="calculator rounded-4">
+                        <div class="float-left">
+                            <label class="label" for="usd">Amount, USD</label><br clear="all" />
+                            <input class="input usd" type="text" name="usd" id="usd" value="" />
+                        </div>
+                        
+                        <span class="break">=</span>
+                        
+                        <div class="float-left">
+                            <label class="label" for="cost">Purchase, RUR</label><br clear="all" />
+                            <input class="input cost" type="text" name="cost" id="cost" value="" />
+                        </div>
+                        
+                        <span class="break">+</span>
+                        
+                        <div class="float-left">
+                            <label class="label" for="earn">Increase, %</label><br clear="all" />
+                            <input class="input earn" type="text" name="earn" id="earn" value="" />
+                        </div>
+                        
+                        <span class="break">=</span>
+                        
+                        <div class="float-left">
+                            <label class="label" for="price">Price, RUR</label><br clear="all" />
+                            <input class="input price" type="text" name="price" id="price" value="" />
+                        </div>
+                        
+                        <br clear="all" />
+                    </div>
+                    
+                    <br />
+                    
+                    <textarea class="textarea description" id="description" name="description"></textarea>
+                    
+                    <br clear="all" /><br />
+                    
+                    <div class="meta-tags">
+                        <div class="float-left no-margin">
+                            <label class="label" for="meta-keywords">Keywords:</label><br clear="all" />
+                            <textarea class="textarea meta-keywords" id="meta_keywords" name="meta_keywords"></textarea><br clear="all" />
+                            <small>Will be used in "keywords" META-tag</small>
+                        </div>
+                        <div class="float-right no-margin">
+                            <label class="label" for="meta-description">Description:</label><br clear="all" />
+                            <textarea class="textarea meta-description" id="meta_description" name="meta_description"></textarea><br clear="all" />
+                            <small>Will be used in "description" META-tag</small>
+                        </div>
+                    </div>
+                    
+                    <br clear="all" /><br />
+                    
+                    <div class="table">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <th>Feature</th>
+                                <th>Value</th>
+                                <th width="40"></th>
+                            </tr>
+                            <tr>
+                                <td>Product type</td>
+                                <td>DVR</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Manufacturer</td>
+                                <td>AV Tech</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>AVC-761</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Number of channels</td>
+                                <td>4</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr>
+                                <td>HDD type</td>
+                                <td>eSATA</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>HDD size</td>
+                                <td>250 Gb</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr>
+                                <td>Video format</td>
+                                <td>H.264</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Color</td>
+                                <td>Black</td>
+                                <td><a class="icon i-edit pointer"></a><a class="icon i-delete pointer"></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <br />
+                
+                <div class="button blue float-left">
+                    <input type="submit" name="auto_parse" value="" />
+                    <span class="icon i-magic-wand "></span>Auto-parse description
+                </div>
+                
+                <div class="button blue float-right">
+                    <input type="submit" name="add_property" value="" />
+                    <span class="icon i-property"></span>Add feature
+                    <span class="icon i-down-blue float-right"></span>
+                </div>
+                
+                <br clear="all" /><br />
+                
+                
+                <div class="button blue float-left">
+                    <input type="submit" name="" value="" />
+                    <span class="icon i-save"></span>Save
+                </div>
+                
+                <div class="button blue float-left">
+                    <input type="submit" name="" value="" />
+                    <span class="icon i-save-and-next"></span>Save and next
+                </div>
+                
+                <div class="button red float-left">
+                    <input type="submit" name="" value="" />
+                    <span class="icon i-delete"></span>Remove
+                </div>
+                
+                <div class="button green float-right">
+                    <input type="submit" name="" value="" />
+                    <span class="icon i-return"></span>Back to list
+                </div>
+                
+                <div class="button brown float-left">
+                    <input type="submit" name="" value="" />
+                    <span class="icon i-product"></span>Create
+                </div>
+                
+                
+                <br clear="all" /><br />
+                
+                
+                <div class="image-popup rounded-8">
+                    <div class="padding rounded-4">
+                        
+                        <div class="panel-top">
+                            <input class="input search" type="text" name="search" id="search" value="" />
+                            <div class="button blue float-right no-margin">
+                                <input type="submit" name="" value="" />
+                                <span class="icon i-search"></span>Search
+                            </div>
+                            <br clear="all" />
+                        </div>
+                        
+                        <div class="results">
+                            <div class="result rounded-4">
+                                <div class="info rounded-2">500 x 174 - JPG</div>
+                                <img src="images/sample-image.jpg" height="90" />
+                                <a href="#" class="preview icon i-preview" title="Show big picture"></a>
+                            </div>
+                            <div class="result rounded-4">
+                                <div class="info selected rounded-2">500 x 174 - JPG</div>
+                                <img src="images/sample-image.jpg" height="90" />
+                                <a href="#" class="preview icon i-preview" title="Show big picture"></a>
+                            </div>
+                            <div class="result rounded-4">
+                                <div class="info rounded-2">500 x 174 - JPG</div>
+                                <img src="images/sample-image.jpg" height="90" />
+                                <a href="#" class="preview icon i-preview" title="Show big picture"></a>
+                            </div>
+                            <div class="result rounded-4">
+                                <div class="info rounded-2">500 x 174 - JPG</div>
+                                <img src="images/sample-image.jpg" height="90" />
+                                <a href="#" class="preview icon i-preview" title="Show big picture"></a>
+                            </div>
+                        </div>
+                        
+                        <div class="panel-bottom">
+                            <div class="button float-left no-margin">
+                                <input type="submit" name="" value="" />
+                                <span class="icon i-check"></span>Select
+                            </div>
+                            <br clear="all" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <br clear="all" /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        
+        <div class="page-footer"></div>
+        
+        <br clear="all" />
+        
+    </div>
+    </div>
+    
+</body>
+</html>
